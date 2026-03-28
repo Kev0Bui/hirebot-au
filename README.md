@@ -9,7 +9,7 @@ Most job search tools are either glorified spreadsheets or black-box resume buil
 - **Your profile is the source of truth.** Claude reads your actual experience and writing style before generating anything. It never fabricates skills or experience.
 - **Drafter-reviewer pipeline.** Every application goes through an AI review step that catches generic language, unsupported claims, and weak openings before you send anything.
 - **Australian-first.** Adzuna AU integration, Australian English spelling, salary ranges in AUD, and awareness of the local job market.
-- **Minimal setup.** Python + pip. No LaTeX, no Docker, no Bun. Output is `.docx` — the format Australian recruiters and ATS systems actually expect.
+- **Minimal setup.** Python + pip. Output is `.docx` and `.pdf`; formats Australian recruiters and ATS systems actually expect.
 - **Runs inside Claude Code.** Three slash commands handle the entire workflow. No web app, no SaaS subscription.
 
 ## Architecture
