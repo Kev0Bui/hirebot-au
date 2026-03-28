@@ -1,6 +1,8 @@
 # Hirebot AU
 
-An AI-powered job search framework for the Australian market, built on [Claude Code](https://claude.ai/claude-code). Search for jobs, evaluate fit, and generate tailored CVs and cover letters — all from your terminal.
+An AI-powered job application framework built on [Claude Code](https://claude.ai/claude-code). Evaluate job fit, and generate tailored CVs and cover letters — all from your terminal.
+
+> **Note on market support:** The `/apply` command works for any job market worldwide — paste any job URL or description and it will produce a tailored application. The `/scrape` command searches the Adzuna AU API and is designed specifically for the **Australian market**. If you're job hunting elsewhere, skip `/scrape` and use `/apply` directly with job links or descriptions from your local job boards.
 
 ## What Makes This Different
 
@@ -8,8 +10,8 @@ Most job search tools are either glorified spreadsheets or black-box resume buil
 
 - **Your profile is the source of truth.** Claude reads your actual experience and writing style before generating anything. It never fabricates skills or experience.
 - **Drafter-reviewer pipeline.** Every application goes through an AI review step that catches generic language, unsupported claims, and weak openings before you send anything.
-- **Australian-first.** Adzuna AU integration, Australian English spelling, salary ranges in AUD, and awareness of the local job market.
-- **Minimal setup.** Python + pip. Output is `.docx` and `.pdf`; formats Australian recruiters and ATS systems actually expect.
+- **Australian-first job search.** Adzuna AU integration, Australian English spelling, salary ranges in AUD, and awareness of the local job market — but `/apply` works anywhere.
+- **Minimal setup.** Python + pip. Output is `.docx` and `.pdf`; formats recruiters and ATS systems actually expect.
 - **Runs inside Claude Code.** Three slash commands handle the entire workflow. No web app, no SaaS subscription.
 
 ## Architecture
@@ -38,7 +40,7 @@ Most job search tools are either glorified spreadsheets or black-box resume buil
 
 - **Python 3.10+** — [python.org](https://www.python.org/downloads/)
 - **Claude Code** — [Installation guide](https://docs.anthropic.com/en/docs/claude-code/overview)
-- **Adzuna API key** (free) — [developer.adzuna.com](https://developer.adzuna.com/)
+- **Adzuna API key** (free, AU only) — [developer.adzuna.com](https://developer.adzuna.com/) — only required if you want to use `/scrape`
 
 ## Quick Start
 
@@ -69,13 +71,15 @@ claude
 
 Runs a conversational interview to build your professional profile. Claude asks about your experience, skills, writing style, and behavioural examples, then saves everything to the `profile/` files. Run this once to get started, or again any time you want to update your profile.
 
-### `/scrape` — Job Search
+### `/scrape` — Job Search (Australia only)
 
 Searches the Adzuna AU API for jobs matching your config. Displays results as a ranked list with fit scores. Pick a number to apply, paste a URL, or paste a job description to start an application.
 
+> If you're not in Australia, skip this command and go straight to `/apply` with a job URL, pasted description, or pasted PDF content from your local job board.
+
 ### `/apply` — Generate Application
 
-The core workflow. Accepts a job URL or pasted description, then:
+The core workflow. Accepts a job URL, pasted description, or pasted PDF content, then:
 
 1. Parses the job posting
 2. Evaluates fit against your profile (scored rubric)
