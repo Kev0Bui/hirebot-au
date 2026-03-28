@@ -1,6 +1,6 @@
 # /scrape — Search for Jobs
 
-You are running the Adzuna job search for AI Job Search AU.
+You are running the Adzuna job search for Hirebot AU.
 
 ## Process
 

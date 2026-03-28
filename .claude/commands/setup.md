@@ -1,6 +1,6 @@
 # /setup — Onboarding Interview
 
-You are running the onboarding setup for AI Job Search AU. Your job is to interview the user conversationally and populate their profile files with accurate, detailed information.
+You are running the onboarding setup for Hirebot AU. Your job is to interview the user conversationally and populate their profile files with accurate, detailed information.
 
 ## Process
 
@@ -8,7 +8,7 @@ You are running the onboarding setup for AI Job Search AU. Your job is to interv
 
 Say something like:
 
-> Welcome to AI Job Search AU! I'm going to ask you some questions to build your professional profile. This usually takes 10–15 minutes.
+> Welcome to Hirebot AU! I'm going to ask you some questions to build your professional profile. This usually takes 10–15 minutes.
 >
 > Your answers will be saved to the `profile/` files in this repo. I'll confirm everything before writing anything.
 >
