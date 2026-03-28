@@ -7,12 +7,14 @@ This skill queries the [Adzuna API](https://developer.adzuna.com/) for Australia
 1. Go to [developer.adzuna.com](https://developer.adzuna.com/)
 2. Click **Sign Up** and create a free account
 3. Once logged in, you'll see your **Application ID** and **Application Key** on the dashboard
-4. Copy both values into `config.yaml`:
+4. Create a `.env` file in the repo root and add your credentials:
 
-```yaml
-adzuna_app_id: "your-app-id-here"
-adzuna_app_key: "your-app-key-here"
 ```
+ADZUNA_APP_ID=your-app-id-here
+ADZUNA_APP_KEY=your-app-key-here
+```
+
+The `.env` file is gitignored, so your keys stay private.
 
 The free tier allows 250 API calls per day, which is more than enough for job searching.
 
