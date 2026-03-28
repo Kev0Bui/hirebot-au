@@ -51,10 +51,14 @@ keywords_exclude:
   - "visa sponsorship required"
 
 # Adzuna API credentials.
-# Sign up free at https://developer.adzuna.com to get your app_id and app_key.
-# These are required for the /scrape command.
-adzuna_app_id: "YOUR_ADZUNA_APP_ID"
-adzuna_app_key: "YOUR_ADZUNA_APP_KEY"
+# Do NOT put your credentials here — they'll be committed to git.
+# Instead, add them to a .env file in the repo root:
+#
+#   ADZUNA_APP_ID=your-app-id
+#   ADZUNA_APP_KEY=your-app-key
+#
+# Sign up free at https://developer.adzuna.com to get your credentials.
+# The .env file is gitignored, so your keys stay private.
 
 # Output format for CVs and cover letters. Currently only "docx" is supported.
 output_format: "docx"

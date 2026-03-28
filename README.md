@@ -50,12 +50,12 @@ cd hirebot-au
 # 2. Install dependencies
 pip3 install -r requirements.txt
 
-# 3. Get your Adzuna API credentials
-#    Sign up at https://developer.adzuna.com (free)
-#    Copy your app_id and app_key
+# 3. Get your Adzuna API credentials (free)
+#    Sign up at https://developer.adzuna.com
 
-# 4. Add your credentials to config.yaml
-#    Open config.yaml and replace YOUR_ADZUNA_APP_ID and YOUR_ADZUNA_APP_KEY
+# 4. Add your credentials to .env
+echo 'ADZUNA_APP_ID=your-app-id' >> .env
+echo 'ADZUNA_APP_KEY=your-app-key' >> .env
 
 # 5. Start Claude Code and run setup
 claude

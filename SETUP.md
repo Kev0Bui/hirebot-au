@@ -77,7 +77,7 @@ Adzuna is a job search engine that aggregates listings from across Australia. Th
 5. You'll see two values:
    - **Application ID** — a short string like `a1b2c3d4`
    - **Application Key** — a longer string like `abcdef1234567890abcdef1234567890`
-6. Copy both of these — you'll need them in Step 5
+6. Copy both of these — you'll need them in Step 4b
 
 The free tier gives you 250 API calls per day, which is plenty for job searching.
 
@@ -176,13 +176,16 @@ keywords_exclude:
   - "internship"
 ```
 
-### `adzuna_app_id` and `adzuna_app_key`
-Your Adzuna API credentials from Step 3.
+### Adzuna API credentials
 
-```yaml
-adzuna_app_id: "a1b2c3d4"
-adzuna_app_key: "abcdef1234567890abcdef1234567890"
+Your Adzuna credentials go in a `.env` file (not `config.yaml`) so they don't get committed to git. Create a file called `.env` in the repo root:
+
 ```
+ADZUNA_APP_ID=a1b2c3d4
+ADZUNA_APP_KEY=abcdef1234567890abcdef1234567890
+```
+
+Replace the values with your actual credentials from Step 3.
 
 ### `output_format`
 Currently only `docx` is supported. Leave this as-is.
@@ -243,8 +246,8 @@ You need to install the dependencies. Run:
 pip install -r requirements.txt
 ```
 
-### "Error: 'adzuna_app_id' in config.yaml is not set"
-Open `config.yaml` and replace `YOUR_ADZUNA_APP_ID` and `YOUR_ADZUNA_APP_KEY` with your actual credentials from [developer.adzuna.com](https://developer.adzuna.com/).
+### "Error: 'adzuna_app_id' is not set"
+Create a `.env` file in the repo root with your Adzuna credentials. See Step 3 and the `adzuna_app_id` section under Step 5.
 
 ### "Error: Adzuna API returned 401 Unauthorised"
 Your API credentials are incorrect. Double-check them at [developer.adzuna.com](https://developer.adzuna.com/) — make sure you're using the Application ID and Application Key (not your login password).
