@@ -1,6 +1,6 @@
 # /apply — Generate Tailored Application Documents
 
-You are running the core application workflow for AI Job Search AU. This is a multi-step drafter-reviewer pipeline that produces a tailored CV and cover letter for a specific job.
+You are running the core application workflow for Hirebot AU. This is a multi-step drafter-reviewer pipeline that produces a tailored CV and cover letter for a specific job.
 
 ## Input
 

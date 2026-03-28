@@ -1,6 +1,6 @@
 # Detailed Setup Guide
 
-This guide walks you through every step of setting up AI Job Search AU, including installing prerequisites. If you're comfortable with Python and the command line, the [Quick Start in the README](README.md) might be all you need.
+This guide walks you through every step of setting up Hirebot AU, including installing prerequisites. If you're comfortable with Python and the command line, the [Quick Start in the README](README.md) might be all you need.
 
 ---
 
@@ -88,8 +88,8 @@ The free tier gives you 250 API calls per day, which is plenty for job searching
 Open your terminal and run:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-job-search-au.git
-cd ai-job-search-au
+git clone https://github.com/YOUR_USERNAME/hirebot-au.git
+cd hirebot-au
 ```
 
 Then install the Python dependencies:

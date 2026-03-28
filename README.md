@@ -1,4 +1,4 @@
-# AI Job Search AU
+# Hirebot AU
 
 An AI-powered job search framework for the Australian market, built on [Claude Code](https://claude.ai/claude-code). Search for jobs, evaluate fit, and generate tailored CVs and cover letters — all from your terminal.
 
@@ -44,8 +44,8 @@ Most job search tools are either glorified spreadsheets or black-box resume buil
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/ai-job-search-au.git
-cd ai-job-search-au
+git clone https://github.com/YOUR_USERNAME/hirebot-au.git
+cd hirebot-au
 
 # 2. Install dependencies
 pip install -r requirements.txt

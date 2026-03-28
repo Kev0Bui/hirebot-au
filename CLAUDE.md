@@ -1,4 +1,4 @@
-# AI Job Search AU — Claude Code Instructions
+# Hirebot AU — Claude Code Instructions
 
 ## Purpose
 
